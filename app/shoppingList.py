@@ -4,3 +4,6 @@ class ShoppingList():
 
 	def getItems(self):
 		return self.items
+
+	def add(self, item):
+		self.items.append(item)

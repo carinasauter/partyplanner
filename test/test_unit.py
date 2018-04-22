@@ -59,3 +59,8 @@ def test_weShouldKnowWhoIsAtTheParty():
 def test_weShouldBeAbleToCreateAnEmptyShoppingList():
 	shoppingList = ShoppingList()
 	assert shoppingList.getItems() == []
+
+def test_weShouldBeAbleToAddItemsToShoppingList():
+	shoppingList = ShoppingList()
+	shoppingList.add("milk")
+	assert shoppingList.getItems() == ["milk"]

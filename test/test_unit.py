@@ -33,3 +33,8 @@ def test_aGuestShouldBeAbleToLeaveAParty():
 	party.attendedBy(susan)
 	party.leftBy(rob)
 	assert 2 == party.numberOfGuests()
+
+def test_aPartyShouldHaveALocation():
+	party = Party()
+	party.setLocation("my House")
+	assert "my House" == party.getLocation()

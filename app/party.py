@@ -14,3 +14,9 @@ class Party():
 
 	def leftBy(self, guest):
 		self.listOfGuests.remove(guest)
+
+	def getLocation(self):
+		return self.location
+
+	def setLocation(self, location):
+		self.location = location

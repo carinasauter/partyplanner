@@ -1,6 +1,7 @@
 import unittest
 from app.party import Party
 from app.guest import Guest
+from app.shoppingList import ShoppingList
 
 def test_aPartywithNoGuestsShouldHaveNoPartyGuests():
 	party = Party()
@@ -54,3 +55,7 @@ def test_weShouldKnowWhoIsAtTheParty():
 	party.attendedBy(susan)
 	assert ["Lisa", "Rob", "susan"] == party.getAttendees()
 
+
+def test_weShouldBeAbleToCreateAnEmptyShoppingList():
+	shoppingList = ShoppingList()
+	assert shoppingList.getItems() == []

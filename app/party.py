@@ -1,7 +1,12 @@
 class Party():
 
 	def __init__(self):
-		self.numberGuests = 0
+		self.listOfGuests = []
+
+
+	def attendedBy(self, guest):
+		self.listOfGuests.append(guest)
+
 
 	def numberOfGuests(self):
-		return self.numberGuests
+		return len(self.listOfGuests)

@@ -10,3 +10,7 @@ class Party():
 
 	def numberOfGuests(self):
 		return len(self.listOfGuests)
+
+
+	def leftBy(self, guest):
+		self.listOfGuests.remove(guest)

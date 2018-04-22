@@ -44,13 +44,13 @@ def test_aGuestShouldRevealHerName():
 	guest1 = Guest("Lisa", "female")
 	assert "Lisa" == guest1.hasName()
 
-# def test_aPartyShouldKnowWhoIsAtTheParty():
-# 	party = Party()
-# 	lisa = Guest("Lisa", 'female')
-# 	rob = Guest("Rob", 'male')
-# 	susan = Guest("susan", 'female')
-# 	party.attendedBy(lisa)
-# 	party.attendedBy(rob)
-# 	party.attendedBy(susan)
-# 	assert ["Lisa", "Rob", "susan"] == party.getAttendees()
+def test_weShouldKnowWhoIsAtTheParty():
+	party = Party()
+	lisa = Guest("Lisa", 'female')
+	rob = Guest("Rob", 'male')
+	susan = Guest("susan", 'female')
+	party.attendedBy(lisa)
+	party.attendedBy(rob)
+	party.attendedBy(susan)
+	assert ["Lisa", "Rob", "susan"] == party.getAttendees()
 

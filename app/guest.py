@@ -3,7 +3,7 @@ class Guest():
 		self.name = name
 		self.gender = gender
 
-	def canDoOtherStuff():
-		pass
+	def hasName(self):
+		return self.name
 
 

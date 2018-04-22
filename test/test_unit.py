@@ -64,3 +64,18 @@ def test_weShouldBeAbleToAddItemsToShoppingList():
 	shoppingList = ShoppingList()
 	shoppingList.add("milk")
 	assert shoppingList.getItems() == ["milk"]
+
+
+def test_createShoppingListBasedOnParty():
+	shoppingList = ShoppingList()
+	party = Party()
+	lisa = Guest("Lisa", 'female')
+	rob = Guest("Rob", 'male')
+	susan = Guest("susan", 'female')
+	party.attendedBy(lisa)
+	party.attendedBy(rob)
+	party.attendedBy(susan)
+	shoppingList.baseOn(party)
+	assert shoppingList.getItems() == ["wine for 4", "food for 4"]
+
+

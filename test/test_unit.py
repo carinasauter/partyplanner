@@ -12,3 +12,13 @@ def test_aPartywithOneGuestShouldHaveOnePartyGuest():
 	lisa = Guest("Lisa", 'female')
 	party.attendedBy(lisa)
 	assert 1 == party.numberOfGuests()
+
+def test_aPartywithThreeGuestsShouldHaveThreeGuests():
+	party = Party()
+	lisa = Guest("Lisa", 'female')
+	rob = Guest("Rob", 'male')
+	susan = Guest("susan", 'female')
+	party.attendedBy(lisa)
+	party.attendedBy(rob)
+	party.attendedBy(susan)
+	assert 3 == party.numberOfGuests()
